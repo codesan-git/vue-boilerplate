@@ -8,8 +8,8 @@ export type ApiResponse<T> = {
 
 // Create an axios instance with default config
 const apiClient = axios.create({
-  baseURL: 'https://jsonplaceholder.typicode.com', // JSONPlaceholder API
-  timeout: 10000, // 10 seconds
+  baseURL: import.meta.env.BASE_BACKEND_URL,
+  timeout: 10000,
   headers: {
     'Content-Type': 'application/json',
     'Accept': 'application/json',

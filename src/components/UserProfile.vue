@@ -71,7 +71,7 @@
 <script setup lang="ts">
 import { ref, watchEffect } from "vue";
 import { useQuery, useMutation } from "@tanstack/vue-query";
-import apiClient from "@/api/apiClient";
+import apiClient from "@/service/apiClient";
 
 // Types
 type User = {
