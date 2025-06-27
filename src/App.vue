@@ -3,9 +3,17 @@
 <template>
   <UApp>
     <div class="flex flex-col items-center justify-center gap-4 h-screen">
-      <h1 class="font-bold text-2xl text-(--ui-primary)">Nuxt UI - Vue Js</h1>
+      <h1 class="font-bold text-2xl text-(--ui-primary)"></h1>
 
-      <UserProfile />
+      <LanguageSwitcher />
+      <router-view />
+
+      <div class="p-4 text-primary">
+        <h1 class="text-2xl font-bold mb-4">{{ $t("common.welcome") }}</h1>
+        <p>{{ $t("common.description") }}</p>
+      </div>
+
+      <!-- <UserProfile />
 
       <div class="flex items-center gap-2">
         <UButton
@@ -23,7 +31,7 @@
           to="https://github.com/nuxt/ui"
           target="_blank"
         />
-      </div>
+      </div> -->
       <TestTable />
     </div>
   </UApp>

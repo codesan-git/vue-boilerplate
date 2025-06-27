@@ -1,0 +1,13 @@
+{
+  "welcome": "Selamat Datang di Aplikasi Kami",
+  "description": "Ini adalah contoh aplikasi multi-bahasa.",
+  "actions": {
+    "save": "Simpan",
+    "cancel": "Batal",
+    "delete": "Hapus"
+  },
+  "messages": {
+    "success": "Operasi berhasil diselesaikan",
+    "error": "Terjadi kesalahan"
+  }
+}
