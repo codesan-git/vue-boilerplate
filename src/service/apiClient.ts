@@ -52,8 +52,9 @@ const setupResponseInterceptor = (instance: AxiosInstance): void => {
       if (error.response?.status === 401) {
         // Handle unauthorized
         localStorage.removeItem('token');
-        // Optional: Redirect to login
-        // window.location.href = '/login';
+        if (window.location.pathname !== '/401') {
+          window.location.href = '/401';
+        }
       }
       return Promise.reject(error);
     }
